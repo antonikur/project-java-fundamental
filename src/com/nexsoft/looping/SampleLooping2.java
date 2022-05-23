@@ -56,6 +56,14 @@ public class SampleLooping2 {
 				System.out.print(i+" ");
 			}
 		}
+//		
+//		String kalimat1 = scan.nextLine();
+//	    String kalimat2 = scan.nextLine();
+//	    String kalimat3 = scan.nextLine();
+//	    
+//	    String kalimat12 = kalimat1.substring(kalimat.indexOf(' '), kalimat1.length());
+//	    String kalimat22 = kalimat2.substring(kalimat.indexOf(' '), kalimat2.length());
+//	    String kalimat32 = kalimat3.substring(kalimat.indexOf(' '), kalimat3.length());
 		
 	}
 }

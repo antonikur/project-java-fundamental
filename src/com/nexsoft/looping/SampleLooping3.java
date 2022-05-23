@@ -2,7 +2,7 @@ package com.nexsoft.looping;
 
 public class SampleLooping3 {
 	public static void main(String[] args) {
-		int size = 30;
+		int size = 10;
 		
 		for(int i = 0; i<size; i++) {
 			for(int j=0; j<size; j++) {
@@ -77,7 +77,20 @@ public class SampleLooping3 {
 		System.out.println();
 		System.out.println("Jumlah bilangan yang bisa dibagi 3 atau 5 adalah: "+jumlahBilangan35);
 		
+		System.out.println();
 		
+		int bintang = 1;
+		for(int i=size; i>0; i--) {
+			for(int blank=i; blank > 1; blank--) {
+				System.out.print(" ");
+			}
+			
+			for(int j=0; j<bintang; j++) {
+				System.out.print("*");
+			}
+			bintang += 2;
+			System.out.println();
+		}
 		
 		
 	}
