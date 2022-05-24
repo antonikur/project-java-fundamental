@@ -18,11 +18,11 @@ public class WeekExam1 {
         System.out.println(angkaNo2 * 3);
         
 	     // isi disini no 3
-        String kalima = scan.nextLine();
+        String kata = scan.nextLine();
 		int pertama = scan.nextInt();
 		int kedua = scan.nextInt();
 		
-		System.out.println(kalima.substring(pertama, kedua));
+		System.out.println(kata.substring(pertama, kedua));
     		
 		
 		// isi disini no 4
@@ -104,25 +104,15 @@ public class WeekExam1 {
 			//salam 150
 			//sang 85
 			//juara 70
-		    String kalimat1 = scan.nextLine();
-		    String kalimat2 = scan.nextLine();
-		    String kalimat3 = scan.nextLine();
-//		    String kalimat1 = "salam 150";
-//		    String kalimat2 = "sang 85";
-//		    String kalimat3 = "juara 70";    
 		    
-		    int kalimat12 = Integer.parseInt(kalimat1.substring(kalimat1.indexOf(' '), kalimat1.length()).trim());
-		    int kalimat22 = Integer.parseInt(kalimat2.substring(kalimat2.indexOf(' '), kalimat2.length()).trim());
-		    int kalimat32 = Integer.parseInt(kalimat3.substring(kalimat3.indexOf(' '), kalimat3.length()).trim());
-		    
-		    kalimat1 = kalimat1.substring(0, kalimat1.indexOf(' '));
-		    kalimat2 = kalimat2.substring(0, kalimat2.indexOf(' '));
-		    kalimat3 = kalimat3.substring(0, kalimat3.indexOf(' '));
 		    
 		    System.out.println("==============================");
-		    System.out.printf("%-15s%03d\n",kalimat1, kalimat12);
-		    System.out.printf("%-15s%03d\n",kalimat2, kalimat22);
-		    System.out.printf("%-15s%03d\n",kalimat3, kalimat32);
+		    for(int i=0; i<3; i++){
+		        String kalimat1 = scan.nextLine();
+		        int angka5 = Integer.parseInt(kalimat1.substring(kalimat1.indexOf(' '), kalimat1.length()).trim());
+		        kalimat1 = kalimat1.substring(0, kalimat1.indexOf(' '));
+		        System.out.printf("%-15s%03d\n",kalimat1, angka5);
+		    }
 		    System.out.println("==============================");
 	}
 	
